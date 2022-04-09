@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hFont {
+    font-family: Copperplate;
+}
+
+.pFont {
+    font-family: "Gill Sans";
+}
+
+.claimedFont {
+    font-family: Copperplate;
+}
+
+.buttonConnectFont {
+    font-family: "Arial Rounded MT Bold";
+}
+
+.rightSide {
+    background: #161415 url(../public/mcqueen.gif) no-repeat center;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+}

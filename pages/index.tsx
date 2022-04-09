@@ -9,8 +9,8 @@ const Home: NextPage = () => {
         <title>Racing Number Club</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <h1 className={'text-red-400'}>ASDasda</h1>
+      <a href={'http://localhost:3000/nft/rnc'}>See Collection</a>
     </div>
   )
 }
