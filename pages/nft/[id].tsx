@@ -1,5 +1,6 @@
 import React from 'react';
 import { useAddress, useDisconnect, useMetamask } from "@thirdweb-dev/react";
+import Link from "next/link";
 
 const CollectionPage = () => {
     const connectWithMetamask = useMetamask();
@@ -43,10 +44,13 @@ const CollectionPage = () => {
             <div className={'flex flex-1 flex-col items-center text-center space-y-0 justify-center mb-6'}>
                 <img className={'object-cover w-80 pb-10 h-40'} src='https://pbs.twimg.com/media/FPsdFARXEAAgkID?format=jpg&name=900x900' />
                 <h1 className={'text-3xl font-bold lg:text-5xl lg:font-extrabold text-white'}>Racing Number Club NFT Collection Mint</h1>
-                <p className={'py-2 text-xl text-green-300 claimedFont'}>4 / 1999 Free NFT's claimed</p>
+                {/*<p className={'py-2 text-xl text-green-300 claimedFont'}>4 / 1999 Free NFT's claimed</p>*/}
+                <p className={'py-2 text-xl text-green-300 claimedFont'}>FREE NFT MINT Coming soon</p>
             </div>
 
-            <button className={'rounded-full shadow-lg shadow-red-400 h-16 w-full bg-emerald-400 text-white font-bold'}>MINT FREE NFT</button>
+            <Link href={'https://opensea.io/collection/racing-number-club'}>
+                <button className={'rounded-full shadow-lg shadow-red-400 h-16 w-full bg-emerald-400 text-white font-bold'}>VIEW COLLECTION</button>
+            </Link>
 
         </div>
 
